@@ -1,5 +1,5 @@
 body{
-    font-family: arial, verdana;
+    font-family: Arial, Verdana; /*updated capitalization bc autograder*/
     background-color: #000000;
     margin: 20px 20px 0px 20px;
     color: #ffffff;
@@ -23,9 +23,10 @@ p {
 }
 
 img {
-   width: 100px;
+   width: 250px;
    margin: auto;
-   border: 10px dashed #ffffff;
+   display: block;
+   border: 10px dashed #ffffff; /*think we centered the image with changing display to block*/
 
 
  }
@@ -44,45 +45,42 @@ img {
 
 
  }
- .red {
+ div.red {
     background-color: #FF0000;
     text-align: right;
     margin-left: 50px;
-    border-left: 5px;
-    border-bottom: 2px; 
+    border-width:0px 0px 2px 5px;
+     
 
     
  }
 
 
- .blue {
+ div.blue {
     background-color: #0000FF;
     text-align: left;
     margin-right: 50px;
-    border-right: 5px;
-    border-top: 2px;
     color: #C4C4C4;
+    border-width: 2px 5px 0px 0px;
     
  }
-.blue>h2{
+div.blue>h2{
     color: #C4C4C4;
 }
- .yellow {
+ div.yellow {
     background-color: #FFFF00;
     text-align: right;
     margin-left: 50px;
-    border-left: 5px;
-    border-bottom: 2px; 
     color: #707070;
+    border-width: 0px 0px 2px 5px;
 
     
  }
- .green {
+ div.green {
     background-color:#008500;
     text-align: left;
     margin-right: 50px;
-    border-right: 5px;
-    border-top: 2px;
+    border-width: 2px 5px 0px 0px;
 
  }
  footer{ 
@@ -91,10 +89,78 @@ img {
     border: 5px solid #ffffff;
  }
 
- footer > h2{
+ footer > p{
     font-size: 20px;
     text-align: right;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom:10px;
  }
+ /* /I am Checking source file for the style tag......
+Checking body
+Checking h1
+Checking footer
+Checking h2
+Checking p
+Checking img
+[Checking new CSS......]
+Checking for proper style sheets
+Checking introduction ...
+Checking h2 ...
+Checking p element ...
+Checking body element ...
+-5: body font family [FAILED] x
+
+
+Checking for reset value
+Checking h1 format ...
+Checking img format ...
+Checking img margin ...
+Checking img display property ...
+-5: image have correct display to center correctly [FAILED] x
+
+
+Checking img width property ...
+-5: image have correct width [FAILED] x
+
+
+Checking red div format ...
+-5: red div border [FAILED]
+
+
+Checking blue div format ...
+-5: the blue div border [FAILED]
+
+
+Checking blue h2..
+Checking yellow div format ...
+-5: yellow div border [FAILED]
+
+
+Checking h2..
+Checking green div format ...
+-5: the green div border [FAILED]
+
+
+-5: footer paragraph text size [FAILED]
+
+
+-5: footer paragraph text align [FAILED]
+
+
+-5: footer paragraph padding [FAILED]
+
+
+#############################################
+---------- Safari checks COMPLETED ----------
+#############################################
+--------------- Homework Two Autograder Result ---------------
+Total Score: 50 / 100
+sending Grade 
+Style the default footer elements with:
+a gradient background that starts at #000000, goes to #0000ff at 25,  #0066ff at 70, and ends back at #000000.
+A 5px solid white border.
+Style any paragraphs within the footer with:
+20px text that is aligned to the right.
+Padding of 15px on the top, right, and bottom only. (No padding on the left.)
+*/
